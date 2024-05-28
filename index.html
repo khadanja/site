@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Sparrow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1em;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .section {
+            padding: 2em;
+            text-align: center;
+        }
+        .section:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+        .portfolio-item {
+            display: inline-block;
+            margin: 1em;
+            padding: 1em;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jack Sparrow</h1>
+        <p>Love to travel and self host</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div id="about" class="section fade-in">
+        <h2>About</h2>
+        <p>Hi, I'm Jack Sparrow. I love traveling and exploring new places. When I'm not on the road, I enjoy self-hosting projects and diving into the technical aspects of it.</p>
+    </div>
+    <div id="portfolio" class="section fade-in">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </div>
+    <div id="contact" class="section fade-in">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:jack.sparrow@example.com">jack.sparrow@example.com</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jack Sparrow. All rights reserved.</p>
+    </footer>
+</body>
+</html>
